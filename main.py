@@ -85,7 +85,12 @@ if __name__=="__main__":
             webbrowser.open("https://classroom.google.com/u/1/h")
         elif 'thank you' in query:
             speak('pleasure helping you')
-            sys.exit(0)
+            speak('do you want to shut down your computer??')
+            ans=takeCommand()
+            if ans == "no":
+                exit(0)
+            else:
+                os.system("shutdown /s /t 1")
 
 
 
