@@ -71,26 +71,33 @@ if __name__=="__main__":
            current_time=datetime.datetime.now().strftime("%H:%M:%S")
            speak(f"ma'am the time is {current_time}")
         elif 'open code blocks' in query:
+            speak("sure maam opening codeblocks")
             target = "C:\\Program Files\\CodeBlocks\\codeblocks.exe"
             os.startfile(target)
         elif 'open whatsapp' in query:
+            speak("sure maam opening whatsapp")
             webbrowser.open("https://web.whatsapp.com/")
         elif 'open facebook' in query:
+            speak("sure maam opening facebook")
             webbrowser.open("https://www.facebook.com/")
         elif 'open youtube' in query:
+            speak("sure maam opening youtube")
             webbrowser.open("https://www.youtube.com/")
         elif 'open google' in query:
+            speak("sure maam opening google")
             webbrowser.open("https://www.google.com/")
         elif 'open classroom' in query:
+            speak("sure maam opening classroom")
             webbrowser.open("https://classroom.google.com/u/1/h")
+
         elif 'thank you' in query:
             speak('pleasure helping you')
             speak('do you want to shut down your computer??')
             ans=takeCommand()
             if ans == "no":
+                speak('no problem maam have a great day ahead!!')
                 exit(0)
             else:
                 os.system("shutdown /s /t 1")
-
 
 
